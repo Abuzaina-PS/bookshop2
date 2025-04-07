@@ -69,7 +69,7 @@ i {
 display: flex;
   justify-content: center; 
  align-items: center; 
-background: url(/image/bg.png);
+background: url(image/bg.png);
 background-position: center;
 background-size: 80%;
 background-repeat: no-repeat;
