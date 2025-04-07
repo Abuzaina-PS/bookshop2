@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+<img src="/image/logo.png" alt="">
+ <button id="menu-toggle" class="menu-toggle">Menu</button>
+<ul id="menu">
+<li><a href="">Home</a></li>
+<li><a href="">About</a></li>
+<li><a href="">Featured</a></li>
+<li><a href="">Arrivals</a></li>
+<li><a href="">Reviews</a></li>
+<li><a href="">Blog</a></li>
+</ul>
+<div class="icon">
+<i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+<i class="fa-solid fa-heart" style="color: #000000;"></i>
+</div>
+    </header>
+<section class="homeSec">
+  <div class="leftS">
+   <h1>Welcome To<span style="color: #00a7b5;"><br>Book Store</span> </h1>
+           
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam a porro omnis vitae laboriosam nulla dignissimos consequatur at accusamus excepturi maiores, mollitia reiciendis voluptatem maxime nostrum blanditiis eius. Deserunt, commodi?</p>
+    <button>Learn More</button>
+  </div>
+  <div class="rightS">
+  <img src="/image/table.png">
+  
+  
+  </div>
+
+</section>
+<br><br><br><br><br><br><br><br><br><br>
+    <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('active'); // Toggle the 'active' class
+  });
+</script>
+</body>
+</html>
