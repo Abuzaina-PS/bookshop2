@@ -2,6 +2,12 @@
 margin: 0%;
 padding: 0%;
 }
+body {
+
+  margin: 0;
+  padding: 0;
+}
+
 ::-webkit-scrollbar {
   width: 12px;
   height: 12px;
@@ -126,6 +132,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 2em;
+margin-bottom: 1rem;
 .ServCard{
   height: 18vh;
   width: 35vh;
@@ -150,74 +157,125 @@ p{
 }
 }
 }
-@media (min-width:520px) {
-      .menu-toggle{
-display: none;
-    }
-    .leftS{
-margin-left: 2rem;
+.aboutSec{
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+height:90vh ;
+.aboutL{
+margin-left: 5rem;
+
+ img{
+  width: 100vh;
+height: 80vh;
+ }
+}
+.aboutr{
+
+height: 100%;
+
+align-content: center;
+padding: 10vh;
+
+button{
+   margin-top:2em; 
+  background-color: #00a7b5;
+  color: white;
+  border: none;
+  padding: 1vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+}
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
 h1{
-font-size: 20rem;
-color: #00a0a0;
+ 
+ font-family: "Montserrat", Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 1rem;
+
 
 }
+p{
+  line-height: 1.3em;
+}
+
+}
+
+}
+@media (min-width: 480px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .leftS {
+    margin-left: 2rem;
+
+    h1 {
+      font-size: 20rem;
+      color: #00a0a0;
     }
-    .rightS{
-img{
+  }
 
-width: 35rem;
-
-
-}
-
-
+  .rightS {
+    img {
+      width: 35rem;
     }
+  }
 }
+
 @media (max-width: 710px) {
   header {
     flex-direction: row;
     align-items: center;
     padding: 0.5rem;
- 
   }
- 
+
   header ul {
-    flex-direction: column; 
+    flex-direction: column;
     width: 10vh;
     padding: 0.5rem 0;
-    display: none; 
+    display: none;
   }
 
   header ul.active {
-    display: flex; 
+    display: flex;
   }
 
   header li {
     margin: 0.5rem 0;
-    font-size: 1.1rem; 
-    width: 100%; 
-    text-align: left; 
-    padding: 0.5rem; 
-    box-sizing: border-box; 
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem;
+    box-sizing: border-box;
   }
 
   header div:last-child {
     align-self: flex-end;
     margin-top: 1rem;
   }
- 
 }
 
- @media (max-width: 480px) {
+@media (max-width: 480px) {
+  header {
+    padding: 0.5rem;
+  }
+
   header img {
-    max-width: 4rem; 
-    height: auto; 
-    margin-left:1rem;
+    max-width: 4rem;
+    height: auto;
+    margin-left: 1rem;
   }
 
   header li {
-    font-size: 1.5rem; 
-    
+    font-size: 1.5rem;
   }
 
   header i {
@@ -226,33 +284,29 @@ width: 35rem;
     margin-bottom: 1.5rem;
   }
 
-  
-  header {
-    padding: 0.5rem; 
+  header ul {
+    padding: 0;
   }
 
-  header ul {
-    padding: 0; 
-  }
-        .menu-toggle{
-      border-radius: 6px;
+  .menu-toggle {
+    border-radius: 6px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s; 
- 
-min-width: 20vw;
-max-height: 15vh;
-background-color: #00a7b5;
-  color: white;
-  border: none;
-  margin-left: 3rem;
-    }
-    .menu-toggle:hover {
-    background-color: #008c95; 
+    transition: background-color 0.3s;
+    min-width: 20vw;
+    max-height: 15vh;
+    background-color: #00a7b5;
+    color: white;
+    border: none;
+    margin-left: 3rem;
+  }
+
+  .menu-toggle:hover {
+    background-color: #008c95;
   }
 
   .nav-links {
-  position: fixed;
+    position: fixed;
     top: 0;
     left: -250px;
     width: 250px;
@@ -266,10 +320,9 @@ background-color: #00a7b5;
     transition: left 0.3s ease-in-out;
     z-index: 1000;
   }
-  
 
   .nav-links.show {
-    display: flex; 
+    display: flex;
   }
 
   .nav-links li {
@@ -279,27 +332,28 @@ background-color: #00a7b5;
 
   .nav-links a {
     text-decoration: none;
-    color: #333; 
+    color: #333;
     font-weight: 500;
-    padding: 0.5rem; 
-    border-radius: 4px; 
-    transition: background-color 0.3s; 
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
   }
 
   .nav-links a:hover {
-    background-color: #e0e0e0; 
+    background-color: #e0e0e0;
   }
-  .rightS{
-display: none;
 
+  .rightS {
+    display: none;
   }
-  .ServCard{
-    width: 25%;
-P{
-display: none;
 
+  .contanir {
+    display: block;
+  } 
+  .aboutL{
+    img{
+      display: none;
+    }
+  }
+   
 }
-
-
-  }
- }
