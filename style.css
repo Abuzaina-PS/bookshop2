@@ -70,6 +70,9 @@ i {
   margin-top: 5%;
   }
 }
+ .menu-toggle {
+    display: none;
+  }
 .homeSec{
 display: flex;
   justify-content: center; 
@@ -210,7 +213,11 @@ p{
 
 }
 /* iPad Pro or larger screens */
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+  .menu-toggle {
+    display: none;
+  }
+
   .aboutL  {
     img{
     width: 40vh;
@@ -235,38 +242,20 @@ p{
       width: 35rem;
     }
   }
+#abimg{
 
-    .contanir{
-    border: #000 1px solid;
-  }
+            width: 40vh;
+            height: 50vh;
+}
+  
 }
 
- @media (min-width: 480px) {
-  .menu-toggle {
+ 
+@media (max-width: 710px) {
+   .menu-toggle {
     display: none;
   }
 
-  .leftS {
-    margin-left: 2rem;
-
-    h1 {
-      font-size: 20rem;
-      color: #00a0a0;
-    }
-  }
-
-  .rightS {
-    img {
-      width: 35rem;
-    }
-  }
-
-    .contanir{
-    border: #000 1px solid;
-  }
-} 
-
-@media (max-width: 710px) {
   header {
     flex-direction: row;
     align-items: center;
@@ -327,6 +316,7 @@ p{
   }
 
   .menu-toggle {
+    display: block;
     border-radius: 6px;
     font-size: 1rem;
     cursor: pointer;
