@@ -2,6 +2,7 @@
   margin: 0%;
   padding: 0%;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ body {
   width: 12px;
   height: 12px;
 }
+
 ::-webkit-scrollbar-track {
   background: #f0f0f0;
 }
@@ -34,30 +36,37 @@ header {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
   height: auto;
+
   .icon {
     margin-right: 2rem;
   }
+
   img {
     max-width: 7rem;
     margin-left: 5rem;
     margin-bottom: 0.5rem;
   }
+
   ul {
     list-style: none;
   }
+
   li {
     display: inline-flex;
     margin: 1rem;
     font-size: 1.5rem;
   }
+
   a {
     text-decoration: none;
     color: #000000;
   }
+
   a:hover {
     text-transform: capitalize;
     color: #00a0a0;
   }
+
   i {
     color: #000000;
     margin-right: 1.5rem;
@@ -65,6 +74,7 @@ header {
     margin-top: 5%;
   }
 }
+
 .homeSec {
   display: flex;
   justify-content: center;
@@ -74,13 +84,16 @@ header {
   background-size: 80%;
   background-repeat: no-repeat;
   height: 90vh;
+
   .rightS {
     height: 100%;
     align-content: center;
+
     img {
       max-width: 45rem;
       margin-right: 5rem;
     }
+
     @media screen and(max-width:1024px) {
       .rights {
         img {
@@ -89,6 +102,7 @@ header {
       }
     }
   }
+
   .leftS {
     height: 100%;
 
@@ -104,10 +118,12 @@ header {
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     }
+
     button:hover {
       opacity: 0.8;
       cursor: pointer;
     }
+
     h1 {
       font-family: "Montserrat", Arial, sans-serif;
       font-size: 3rem;
@@ -116,11 +132,13 @@ header {
       color: #000;
       margin-bottom: 1rem;
     }
+
     p {
       line-height: 1.3em;
     }
   }
 }
+
 .Reviews {
   padding: 2rem 6rem 2rem 6rem;
 }
@@ -129,18 +147,22 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3vh;
+
   @media screen and (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+
   @media screen and (max-width: 480px) {
     grid-template-columns: 1fr;
   }
 }
+
 .Review-title {
   text-align: center;
   font-size: 2em;
@@ -205,10 +227,12 @@ header {
   padding: 1vh;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
   &:hover {
     opacity: 0.8;
     cursor: pointer;
   }
+
   @media screen and (max-width: 480px) {
     width: 4rem;
     height: 1rem;
@@ -299,6 +323,7 @@ p {
     .ServCard {
       justify-items: center;
       align-content: center;
+
       .icon {
         font-size: 2rem;
       }
@@ -316,11 +341,13 @@ p {
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
     justify-items: center;
+
     .ServCard {
       height: auto;
 
       justify-items: center;
       align-content: center;
+
       .icon {
         font-size: 1.5rem;
       }
@@ -335,11 +362,13 @@ p {
     }
   }
 }
+
 .aboutSec {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 90vh;
+
   .aboutL {
     margin-left: 5rem;
 
@@ -348,6 +377,7 @@ p {
       height: 80vh;
     }
   }
+
   .aboutr {
     height: 100%;
 
@@ -365,10 +395,12 @@ p {
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     }
+
     button:hover {
       opacity: 0.8;
       cursor: pointer;
     }
+
     h1 {
       font-family: "Montserrat", Arial, sans-serif;
       font-size: 3rem;
@@ -377,11 +409,13 @@ p {
       color: #000;
       margin-bottom: 1rem;
     }
+
     p {
       line-height: 1.3em;
     }
   }
 }
+
 /* arrival section samir */
 
 .arrivals {
@@ -490,22 +524,66 @@ p {
   }
 }
 
+
+.Featured_Books {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(82 187 189);
+
+  .bookcards {
+    display: flex;
+    flex-wrap: nowrap;   /* 🔥 this prevents wrapping to next line */
+    overflow-x: scroll;
+    width: 100vw;
+    height: auto;
+    overflow-x: auto;
+    gap: 1vh;
+
+    .Book_card {
+      min-width: fit-content;
+      height: auto;
+      border: 1px solid rgb(82 187 189);
+      text-align: center;
+      
+      img {
+        object-fit: fill;
+        flex: 1;
+        width: 70%;
+        height: 50%;
+      }
+
+      .bookdetails {
+        flex: 1;
+      }
+    }
+  }
+}
+
+/* samir code  */
 @media (min-width: 480px) {
   .menu-toggle {
     display: none;
   }
+
   .leftS {
     margin-left: 2rem;
+
     h1 {
       font-size: 20rem;
       color: #00a0a0;
     }
   }
+
   .rightS {
     img {
       width: 35rem;
     }
   }
+
   #abimg {
     width: 40vh;
     height: 50vh;
@@ -526,6 +604,7 @@ p {
       display: none;
     }
   }
+
   .rights {
     img {
       display: none;
@@ -594,6 +673,7 @@ p {
   header ul {
     padding: 0;
   }
+
   .menu-toggle {
     display: block;
     border-radius: 6px;
@@ -607,6 +687,7 @@ p {
     border: none;
     margin-left: 3rem;
   }
+
   .menu-toggle:hover {
     background-color: #008c95;
   }
@@ -648,11 +729,14 @@ p {
   .nav-links a:hover {
     background-color: #e0e0e0;
   }
+
   .rightS {
     display: none;
   }
+
   .ServCard {
     width: 25%;
+
     P {
       display: none;
     }
