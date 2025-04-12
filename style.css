@@ -210,7 +210,101 @@ p{
 }
 
 }
+}
+footer{
+  background-color: hsl(0deg 0% 91.76%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+div{
+margin-top: 3vh;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0 5vh; */
+  flex-wrap: wrap;
+}
+.footer-credit {
+  text-align: center;
+  margin-top: 2vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #000;
+  margin-bottom: 0.5vh;
+}
+.f1{
+  
+width: 15%;
+margin-left: 5vh;
+img{
+width: 5vw;
+height: 5vh;
+margin-bottom: 1vh;
+}
+p{
+text-align:start;
+width: 85%;
 
+}
+
+}
+.f2{
+h1{
+margin-bottom: 1vh;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+li{
+  list-style: none;
+  margin: 1vh;
+}
+}
+.f3{
+display: flex;
+flex-direction: column;
+width: 15%;
+}
+.f4{
+width: 15%;
+i{
+  margin: 3%;
+  
+}
+
+}
+.f5{
+  display: flex;
+  flex-direction: column;
+width: 15%;
+h1{
+  margin-bottom: 2%;
+}
+input{
+margin-bottom: 4%;
+background-color: #bbbcbc;
+border: none;
+border-radius: 10px;
+width: 12vw;
+height: 3.2vh;
+margin-right: 2vh;
+text-align: center;
+}
+button{
+   
+  background-color: #00a7b5;
+  color: white;
+  border: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+width: 6vw;
+margin-right: 2vh;
+text-align: center;
+}
+
+}
 }
 /* iPad Pro or larger screens */
 @media only screen and (max-width: 1024px) {
@@ -404,5 +498,45 @@ text-align: center;
 
 
   }
-   
+ .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2vh;
+  }
+
+  .footer-content > div {
+    width: 90%;
+  }
+
+  
+    #f11{
+width: 10vh;
+    height: 10vh;
+
+    }
+    
+  
+
+  .f5{
+
+input {
+    width: 80vw;
+  }
+
+  button {
+    width: 50vh;
+  }
+
+  } 
+  .footer-credit {
+    margin-top: 2vh;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 3vh 0;
+  }
 }
+
+
