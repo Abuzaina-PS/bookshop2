@@ -124,6 +124,16 @@ header {
 /* Reviews */
 .Reviews {
   padding: 2rem 6rem 2rem 6rem;
+
+  @media screen and (max-width: 1024px) {
+    padding: 0rem;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0rem;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 0rem;
+  }
 }
 
 .Review-cards {
