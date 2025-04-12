@@ -28,7 +28,7 @@ header {
   display: flex;
   position: fixed;
   flex-direction: row;
-  z-index: 1;
+  /* z-index: 1; */
   justify-content: space-between;
   align-items: center;
   background-color: white;
@@ -138,6 +138,7 @@ header {
     }
   }
 }
+
 .aboutSec {
   display: flex;
   justify-content: space-between;
@@ -461,6 +462,7 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
+
   li {
     display: block;
     margin: 1rem;
@@ -706,8 +708,11 @@ footer {
       }
     }
   }
+
   .footer {
     width: 100vh;
+
+
   }
 }
 
@@ -773,7 +778,7 @@ footer {
         transition: transform 0.8s;
 
         &:hover {
-          transform: scale(1.06);
+          transform: scale(1.5);
         }
 
         @media screen and (max-width: 768px) {
@@ -990,11 +995,9 @@ footer {
   }
 
   .ServCard {
-    width: 25%;
+    width: 50%;
 
-    P {
-      display: none;
-    }
+
   }
 
   .aboutr {
