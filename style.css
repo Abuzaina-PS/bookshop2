@@ -6,6 +6,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -23,7 +24,9 @@ body {
   border-radius: 25px;
   height: 4px;
 }
-
+::-webkit-scrollbar-button {
+  display: none;
+}
 header {
   display: flex;
   position: fixed;
@@ -594,6 +597,15 @@ footer {
   }
 }
 
+/* .aboutSec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+
+  .aboutL {
+    margin-left: 5rem; */
+
 .f2 {
   h1 {
     margin-bottom: 1vh;
@@ -746,7 +758,7 @@ footer {
     padding: 10px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 2fr);
-    grid-gap: 5vh;
+    grid-gap: 10vh;
 
     @media screen and (max-width: 1024px) {
       grid-template-columns: repeat(3, 1fr);
@@ -776,7 +788,7 @@ footer {
         align-items: center;
         object-fit: cover;
         transition: transform 0.8s;
-
+        
         &:hover {
           transform: scale(1.5);
         }
@@ -810,6 +822,9 @@ footer {
           border: 3px solid rgb(82 187 189);
           padding: 3%;
 
+          &:hover{
+            cursor: pointer;
+          }
           @media screen and (max-width: 768px) {
             font-size: 0.8rem;
             padding: 5px 8px;
@@ -824,6 +839,63 @@ footer {
   }
 }
 
+
+.Featured_Books {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  width: 100%;
+  height: auto;
+  .bookcards {
+    display: flex;
+    overflow-x: scroll;
+    width: 100vw;
+    height: auto;
+    gap: 1vh;
+    .Book_card {
+      display: flex;
+      flex-direction: column;
+      min-width: 30vh;
+      height: 60vh;
+      border: 1px solid gray;
+      text-align: center;
+      align-items: center;
+      gap: 4vh;
+      margin-bottom: 1vh;
+      h4{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+      }
+      p{
+        color: lightgrey;
+      }
+      button{
+        border : 2px solid rgb(66, 159, 160); 
+        padding: 1vh;
+        background-color: white;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+      img {
+        object-fit: cover;
+        flex: 1;
+        width: 15vh;
+        height: 30vh;
+        transition: 0.8s;
+        &:hover {
+          transform: scale(1.06);
+        }
+      }
+      .bookdetails {
+        flex: 1;
+      }
+    }
+  }
+}
+
+
+/* samir code  */
 @media (min-width: 480px) {
   .menu-toggle {
     display: none;
@@ -1057,3 +1129,4 @@ footer {
     }
   }
 }
+  
