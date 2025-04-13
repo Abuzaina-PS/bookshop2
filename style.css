@@ -2,11 +2,16 @@
   margin: 0%;
   padding: 0%;
 }
-
+:root{
+  --primary-color: #00a0a0;
+  --fontFamily : Arial, sans-serif;
+  --secondry-color : #f2f2f2;
+}
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: var(--fontFamily);
 }
 
 ::-webkit-scrollbar {
@@ -15,12 +20,12 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f0f0f0;
+  background: var(--secondry-color);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #00a0a0;
-  border: 2px solid #f0f0f0;
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondry-color);
   border-radius: 25px;
   height: 4px;
 }
@@ -34,8 +39,8 @@ header {
   z-index: 1;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  border-bottom: 2px solid #00a0a0;
+  background-color: var(--secondry-color);
+  border-bottom: 2px solid var(--primary-color);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
   height: auto;
@@ -67,7 +72,7 @@ header {
 
   a:hover {
     text-transform: capitalize;
-    color: #00a0a0;
+    color: var(--primary-color);
   }
 
   i {
@@ -114,8 +119,8 @@ header {
 
     button {
       margin-top: 2em;
-      background-color: #00a7b5;
-      color: white;
+      background-color: var(--primary-color);
+      color: var(--secondry-color);
       border: none;
       padding: 1vh;
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -167,12 +172,11 @@ header {
 
     button {
       margin-top: 2em;
-      background-color: #00a7b5;
-      color: white;
+      background-color: var(--primary-color);
+      color: var(--secondry-color);
       border: none;
       padding: 1vh;
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-family: var(--fontFamily);
     }
 
     button:hover {
@@ -181,7 +185,7 @@ header {
     }
 
     h1 {
-      font-family: "Montserrat", Arial, sans-serif;
+      font-family: var(--fontFamily);
       font-size: 3rem;
       font-weight: bold;
       line-height: 1.2;
@@ -201,7 +205,7 @@ header {
   gap: 4vh;
   width: 100%;
   height: auto;
-  border: 1px solid rgb(82 187 189);
+  border: 1px solid var(--primary-color);
   .bookcards {
     display: flex;
     overflow-x: scroll;
@@ -211,7 +215,7 @@ header {
     .Book_card {
       min-width: fit-content;
       height: auto;
-      border: 1px solid rgb(82 187 189);
+      border: 1px solid var(--primary-color);
       text-align: center;
       img {
         object-fit: cover;
@@ -230,15 +234,15 @@ header {
   padding: 2rem 6rem 2rem 6rem;
 
   @media screen and (max-width: 1024px) {
-    padding: 0rem;
+    padding: 3rem;
   }
 
   @media screen and (max-width: 768px) {
-    padding: 0rem;
+    padding: 3rem;
   }
 
   @media screen and (max-width: 480px) {
-    padding: 0rem;
+    padding: 3rem;
   }
 }
 
@@ -270,7 +274,7 @@ header {
 
 .Review-profile {
   display: grid;
-  box-shadow: 0px 0px 7px #00a7b5;
+  box-shadow: 0px 0px 7px var(--primary-color);
   position: relative;
   padding: 1rem;
   grid-template-rows: repeat(4, auto-fit);
@@ -320,7 +324,7 @@ header {
   position: absolute;
   bottom: 31%;
   left: 7%;
-  background-color: #00a7b5;
+  background-color: var(--primary-color);
   color: white;
   border: none;
   padding: 1vh;
@@ -455,7 +459,7 @@ p {
 }
 
 .shadow {
-  box-shadow: 0px 0px 0.4rem #00a7b5;
+  box-shadow: 0px 0px 0.4rem var(--primary-color);
 }
 
 footer {
@@ -526,7 +530,7 @@ footer {
   gap: 5vh;
 
   .ServCard {
-    height: 20vh;
+    height: 25vh;
     justify-content: center;
     border: 2px solid #00a7b5;
     box-shadow: 0 0 10px #089da1;
@@ -654,11 +658,10 @@ footer {
   }
 
   button {
-    background-color: #00a7b5;
+    background-color: var(--primary-color);
     color: white;
     border: none;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: var(--fontFamily);
     border-radius: 10px;
     width: 6vw;
     margin-right: 2vh;
@@ -693,12 +696,11 @@ footer {
 
       button {
         margin-top: 2em;
-        background-color: #00a7b5;
+        background-color: var(--primary-color);
         color: white;
         border: none;
         padding: 1vh;
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-family: var(--fontFamily)
       }
 
       button:hover {
@@ -707,7 +709,7 @@ footer {
       }
 
       h1 {
-        font-family: "Montserrat", Arial, sans-serif;
+        font-family: var(--fontFamily);
         font-size: 3rem;
         font-weight: bold;
         line-height: 1.2;
@@ -741,7 +743,7 @@ footer {
   h3 {
     text-align: center;
     font-size: xx-large;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fontFamily);
     font-weight: 600;
 
     @media screen and (max-width: 768px) {
@@ -750,7 +752,7 @@ footer {
   }
 
   i {
-    color: rgb(8 157 161);
+    color: var(--primary-color);
   }
 
   .arrival {
@@ -758,7 +760,7 @@ footer {
     padding: 10px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 2fr);
-    grid-gap: 10vh;
+    grid-gap: 5vh;
 
     @media screen and (max-width: 1024px) {
       grid-template-columns: repeat(3, 1fr);
@@ -766,11 +768,13 @@ footer {
 
     @media screen and (max-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 3vh;
+      
     }
 
     @media screen and (max-width: 480px) {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1/2fr;
+      padding: 3rem;
+      gap: 2vh;
     }
 
     .arrivalcard {
@@ -779,7 +783,6 @@ footer {
       padding-top: 4px;
       align-items: center;
       justify-content: center;
-
       img {
         position: relative;
         left: 15%;
@@ -819,7 +822,7 @@ footer {
           margin: 1vh 0vh;
           background-color: white;
           color: black;
-          border: 3px solid rgb(82 187 189);
+          border: 3px solid var(--primary-color);
           padding: 3%;
 
           &:hover{
@@ -865,14 +868,14 @@ footer {
       gap: 4vh;
       margin-bottom: 1vh;
       h4{
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: var(--fontFamily);
         font-weight: 600;
       }
       p{
         color: lightgrey;
       }
       button{
-        border : 2px solid rgb(66, 159, 160); 
+        border : 2px solid var(--primary-color); 
         padding: 1vh;
         background-color: white;
         &:hover{
@@ -908,7 +911,7 @@ footer {
 
     h1 {
       font-size: 20rem;
-      color: #00a0a0;
+      color: var(--primary-color);
     }
   }
 
@@ -1016,14 +1019,14 @@ footer {
     transition: background-color 0.3s;
     min-width: 20vw;
     max-height: 15vh;
-    background-color: #00a7b5;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     margin-left: 3rem;
   }
 
   .menu-toggle:hover {
-    background-color: #008c95;
+    background-color: var(--primary-color);
   }
 
   .nav-links {
@@ -1037,7 +1040,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    border-right: 2px solid #00a0a0;
+    border-right: 2px solid var(--primary-color);
     transition: left 0.3s ease-in-out;
     z-index: 1000;
   }
@@ -1069,9 +1072,7 @@ footer {
   }
 
   .ServCard {
-    width: 50%;
-
-
+    width: 80%;
   }
 
   .aboutr {
