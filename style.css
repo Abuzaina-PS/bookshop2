@@ -229,7 +229,52 @@ header {
     p {
       text-align: center;
     }
+  }@media (max-width: 1024px) {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  .ServCard {
+    justify-items: center;
+    align-content: center;
+
+    .icon {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: medium;
+    }
+
+    p {
+      font-size: small;
+    }
   }
+}
+
+@media (max-width: 600px) {
+  grid-template-columns: 1fr;
+  justify-items: center;
+
+  .ServCard {
+    height: auto;
+
+    justify-items: center;
+    align-content: center;
+
+    .icon {
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: small;
+    }
+
+    p {
+      font-size: x-small;
+    }
+  }
+}
+}
 
 /* --------------------------------------------------------Featured-Books----------------------------------------------------- */
 .Featured_Books {
@@ -936,52 +981,7 @@ footer {
   }
 }
  
-@media (max-width: 1024px) {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
 
-  .ServCard {
-    justify-items: center;
-    align-content: center;
-
-    .icon {
-      font-size: 2rem;
-    }
-
-    h2 {
-      font-size: medium;
-    }
-
-    p {
-      font-size: small;
-    }
-  }
-}
-
-@media (max-width: 600px) {
-  grid-template-columns: 1fr;
-  justify-items: center;
-
-  .ServCard {
-    height: auto;
-
-    justify-items: center;
-    align-content: center;
-
-    .icon {
-      font-size: 1.5rem;
-    }
-
-    h2 {
-      font-size: small;
-    }
-
-    p {
-      font-size: x-small;
-    }
-  }
-}
-}
 .f2 {
 h1 {
   margin-bottom: 1vh;
