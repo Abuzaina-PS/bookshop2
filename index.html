@@ -13,7 +13,7 @@
 <body>
   <header>
     <img src="image/logo.png" alt="" />
-    <button id="menu-toggle" class="menu-toggle">Menu</button>
+
     <ul id="menu">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -23,14 +23,37 @@
       <li><a href="#Blog">Blog</a></li>
     </ul>
     <div class="icon">
-      <i class="fa-solid fa-magnifying-glass" style="color: #000000"></i>
-      <i class="fa-solid fa-heart" style="color: #000000"></i>
+      <i class="fa-solid fa-circle-half-stroke darkTheme" ></i>
+      <i class="fa-solid fa-magnifying-glass" ></i>
+      <i class="fa-solid fa-heart" ></i>
     </div>
+    
+
+<i class="fa-solid fa-bars navMenu"></i>
+
+<div class="mobile-menu" id="mobileMenu">
+  <span class="close-menu" id="closeMenu">&times;</span>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#Featured">Featured</a></li>
+    <li><a href="#arrival">Arrivals</a></li>
+    <li><a href="#Reviews">Reviews</a></li>
+    <li><a href="#Blog">Blog</a></li>
+  </ul>
+</div>
+
+
   </header>
 
   <section class="homeSec" id="home">
     <div class="leftS">
-      <h1>Welcome To<span style="color: #00a7b5;"><br>Book Store</span> </h1>
+      
+    <div class="WelcomeWord">
+  <span style="font-weight: bold;">Welcome To </span>
+  <span style="color: #00BFCF; font-weight: bold;">Book Store</span>
+</div>
+
 
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam a porro omnis vitae laboriosam nulla
         dignissimos consequatur at accusamus excepturi maiores, mollitia reiciendis voluptatem maxime nostrum blanditiis
@@ -66,7 +89,7 @@
 
   <section class="aboutSec" id="about">
     <div class="aboutL">
-      <img src="image/about.png" alt="">
+      <img src="image/about.png" alt="" id="aboutimg">
     </div>
     <div class="aboutr">
       <h1>About Us</h1>
@@ -547,11 +570,11 @@
 
 <footer>
   <div class="footer-content">
-<div class="f1" >
-  <img src="image/logo.png" alt="" id="f11">
+<div class="part-1" >
+  <img src="image/logo.png" alt="" id="footerImg">
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet pariatur deleniti excepturi quidem, hic maiores! Dignissimos adipisci, ipsam iure illo, laboriosam ex ad numquam, accusantium reprehenderit aliquid repudiandae! Nemo.</p>
 </div>
-<div class="f2">
+<div class="part-2">
   <h1>Quick Link</h1>
   <ul>
   <li><a href="#home">Home</a></li>
@@ -563,7 +586,7 @@
 
   </ul>
 </div>
-<div class="f3">
+<div class="part-3">
 <h1>Contact info</h1>
 <div>
 <i class="fa-solid fa-phone" style="color: #000000;"></i>
@@ -578,14 +601,14 @@
 <span>bookstore123@gmail.com</span>
 </div>
 </div>
-<div class="f4">
+<div class="part-4">
   <h1>Follow Us</h1>
   <i class="fa-brands fa-facebook-f" style="color: #000000;"></i>
   <i class="fa-brands fa-instagram" style="color: #000000;"></i>
   <i class="fa-brands fa-twitter" style="color: #000000;"></i>
   <i class="fa-brands fa-linkedin-in" style="color: #000000;"></i>
 </div>
-<div class="f5">
+<div class="part-5">
   <h1>Newsletter</h1>
   <input type="email" name="email" id="input1" placeholder="You email id here">
   <button>Subscribe</button>
@@ -594,14 +617,27 @@
 <p class="footer-credit">Design by <span style="color: #00a7b5;"> <i class="fa-solid fa-face-smile"></i> Osama_!Ps || kar-palestine || mohammed </span></p>
 </footer>
 
-    <script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('menu');
+ 
 
-  menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('active'); // Toggle the 'active' class
+
+</body>
+<script>
+  const menuIcon = document.querySelector('.navMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeMenu = document.getElementById('closeMenu');
+
+  menuIcon.addEventListener('click', () => {
+    mobileMenu.style.display = 'block';
+  });
+
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.style.display = 'none';
+  });
+   const toggleIcon = document.querySelector('.darkTheme');
+
+  toggleIcon.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
   });
 </script>
-</body>
 
 </html>
