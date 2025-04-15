@@ -10,15 +10,14 @@
     --dark-primary-color: #000000;
       --dark-secondry-color: #e2c20d;
 }
-
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  font-family: var(--fontFamily);
-}
 body.dark-mode {
   background-color: #121212;
+  color: var(--secondry-color);
+  button{
+color: var(--dark-primary-color);
+background-color: var(--dark-secondry-color);
+border-color: var(--dark-primary-color);
+  }
   header{
 background-color: var(--dark-primary-color);
 color: var(--secondry-color);
@@ -37,13 +36,18 @@ i{
 }
 
   }
+  
 }
-
 
 .dark-mode .darkTheme {
   color: var(--secondry-color);
 }
-
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: var(--fontFamily);
+}
 ::-webkit-scrollbar {
   width: 12px;
   height: 12px;
@@ -421,6 +425,9 @@ align-items: center;
 
         .icon {
           font-size: 1.5rem;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
         }
 
         h2 {
@@ -1032,25 +1039,25 @@ height: 40vh;
       height: auto;
       margin-left: 1rem;
     }
-.icon{
-  display: flex;
-  align-items: center;
-align-self: center;
-margin-top: 1rem;
-margin-left: 2rem
-}
+
 .navMenu{
 display: flex;
+
 align-items: end;
+font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  margin-right: 4rem;
 }
     header li {
       font-size: 1.5rem;
     }
 
-    header i {
+    header .icon {
       font-size: 1.2rem;
-      margin-left: 1rem;
       margin-bottom: 1.5rem;
+        margin-top: 1rem;
+        margin-left: 2rem
     }
 
     header {
@@ -1077,7 +1084,8 @@ align-items: end;
     }
 
     .ServCard {
-      width: 80%;
+      width: 85%;
+  
     }
 .aboutSec{
 display: inline;
