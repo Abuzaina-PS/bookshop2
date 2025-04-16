@@ -13,10 +13,29 @@
 button.dark-mode {
   background-color: var(--dark-secondry-color);
 }
+.dark-mode ::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.dark-mode ::-webkit-scrollbar-track {
+  background: var(--secondry-color);
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+  background-color: var(--dark-secondry-color);
+  border: 2px solid var(--dark-primary-color);
+  border-radius: 25px;
+}
+
+.dark-mode ::-webkit-scrollbar-button {
+  display: none;
+}
 body.dark-mode {
   background-color: #121212;
   color: var(--secondry-color);
-
+ 
+  
   header{
 background-color: var(--dark-primary-color);
 color: var(--secondry-color);
@@ -41,6 +60,122 @@ color: var(--dark-primary-color);
 border-color: var(--dark-primary-color);
     }
   }
+  .homeSec{
+    span{
+      color: var(--secondry-color);
+    }
+    .span-1{
+      color: var(--dark-secondry-color);
+    }
+    button{
+      background-color: var(--dark-secondry-color);
+      color: var(--dark-primary-color);
+    }
+  
+  }
+  .ServCard{
+    border-color: var(--dark-secondry-color);
+    box-shadow: 0 0 10px var(--dark-secondry-color);
+    .icon{
+      color: var(--dark-secondry-color);
+    }
+  }
+  .aboutr{
+    h1{
+      color: var(--secondry-color);
+    }
+    button{
+color: var(--dark-primary-color);
+background-color: var(--dark-secondry-color);
+
+    }
+  }
+  .Featured_Books{
+      .genres {
+          color: var(--dark-secondry-color);
+        }
+      
+        .price {
+          color: var(--secondry-color);
+        }
+      
+        .old-price {
+          color: var(--secondry-color);
+        }
+           
+  }
+     .FeaturedBtn {
+       color: var(--secondry-color);
+       border-color: var(--dark-secondry-color);
+       background-color: var(--dark-primary-color);
+     }
+     .arrivaldetails{
+      i{
+        color: var(--dark-secondry-color);
+      }
+      button{
+       background-color: var(--dark-primary-color);
+       color: var(--secondry-color);
+      }
+     }
+     .Review-profile{
+      box-shadow: 0px 0px 7px var(--dark-secondry-color);
+      
+     }
+     .rates{
+      i{color: var(--dark-secondry-color);}
+     }
+         .shadow {
+           box-shadow: 0px 0px 0.4rem var(--dark-secondry-color);
+         }
+     .OurBlog-card{
+i{
+  color: var(--dark-secondry-color);
+}
+     }
+     footer{
+      background-color: #111;
+        color: #fff;
+        a{
+          color: var(--secondry-color);
+        }
+        i{
+          color: var(--secondry-color);
+        }
+        img{
+          filter: brightness(0) saturate(100%) invert(100%) sepia(100%) hue-rotate(180deg);
+        }
+        span{
+          color: var(--dark-secondry-color);
+        }
+        .footer-credit{
+          p{
+            
+            color: var(--secondry-color);
+          }
+        }
+        span{
+          color: var(--secondry-color);
+        }
+        p{
+          color: var(--secondry-color);
+        }
+      .footerSpan{
+        i{
+          color: var(--dark-secondry-color);
+        }
+        color: var(--dark-secondry-color);
+      }
+     }
+         .mobile-menu{
+          background-color: var(--dark-primary-color);
+          .close-menu{
+            color: var(--secondry-color);
+          }
+          ul{
+            color: var(--secondry-color);
+          }
+         }
 }
 
 .dark-mode .darkTheme {
@@ -211,7 +346,9 @@ align-items: center;
   background-size: 80%;
   background-repeat: no-repeat;
   height: 90vh;
-
+.span-1{
+  color: var(--primary-color);
+}
   .rightS {
     height: 100%;
     align-content: center;
@@ -384,6 +521,7 @@ align-items: center;
         align-items: center;
         font-size: 3rem;
         margin-bottom: 1rem;
+        color: var(--primary-color);
       }
 
       h2 {
@@ -491,7 +629,7 @@ align-items: center;
           color: lightgrey;
         }
 
-        button {
+             .FeaturedBtn {
           border: 2px solid var(--primary-color);
           padding: 1vh;
           background-color: white;
@@ -518,6 +656,17 @@ align-items: center;
         }
       }
     }
+        .genres {
+          color: var(--primary-color);
+        }
+    
+        .price {
+          color: var(--dark-primary-color);
+        }
+    
+        .old-price {
+          color: var(--dark-primary-color);
+        }
   }
 
   /* --------------------------------------------------------Arrivals----------------------------------------------------- */
@@ -874,7 +1023,16 @@ align-items: center;
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
-
+    .part-4 {
+        i {
+    
+          color: var(--dark-primary-color);
+        }
+      }
+      
+span{
+  color: var(--primary-color);
+}
     li {
       display: block;
       margin: 1rem;
@@ -948,6 +1106,15 @@ align-items: center;
           height: 1.5rem;
         }
     }
+   .part-3{
+    span{
+      color:var(--dark-primary-color);
+    }
+    i{
+      color:var(--dark-primary-color);
+    }
+    
+   }
   }
 
   /* ------------------------------------------------------------------------- */
