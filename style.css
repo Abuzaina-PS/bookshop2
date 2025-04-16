@@ -10,14 +10,13 @@
     --dark-primary-color: #000000;
       --dark-secondry-color: #e2c20d;
 }
+button.dark-mode {
+  background-color: var(--dark-secondry-color);
+}
 body.dark-mode {
   background-color: #121212;
   color: var(--secondry-color);
-  button{
-color: var(--dark-primary-color);
-background-color: var(--dark-secondry-color);
-border-color: var(--dark-primary-color);
-  }
+
   header{
 background-color: var(--dark-primary-color);
 color: var(--secondry-color);
@@ -34,15 +33,21 @@ a:hover{
 i{
   color: var(--secondry-color);
 }
-
   }
-  
+  div{
+    button{
+background-color: var(--dark-secondry-color);
+color: var(--dark-primary-color);
+border-color: var(--dark-primary-color);
+    }
+  }
 }
 
 .dark-mode .darkTheme {
   color: var(--secondry-color);
 }
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -360,7 +365,7 @@ align-items: center;
   /* --------------------------------------------------------served-card----------------------------------------------------- */
   .contanir {
     width: 100%;
-    height: auto;
+    /* height: auto; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
@@ -927,7 +932,7 @@ align-items: center;
           background-color: #bbbcbc;
           border: none;
           border-radius: 10px;
-          width: 10vw;
+          width: auto;
           height: 3.2vh;
           /* margin-right: 2vh; */
           text-align: center;
@@ -939,7 +944,7 @@ align-items: center;
           border: none;
           font-family: var(--fontFamily);
           border-radius: 10px;
-          width: 7vw;
+          width:  auto ;
           height: 1.5rem;
         }
     }
@@ -1039,7 +1044,14 @@ height: 40vh;
       height: auto;
       margin-left: 1rem;
     }
-
+.homeSec{
+  height: 70vh;
+  margin-bottom: 0%;
+  .leftS{
+ 
+    padding: 0%;
+  }
+}
 .navMenu{
 display: flex;
 
@@ -1047,7 +1059,7 @@ align-items: end;
 font-size: 1.2rem;
   margin-bottom: 1.5rem;
   margin-top: 1rem;
-  margin-right: 4rem;
+  /* margin-right: 4rem; */
 }
     header li {
       font-size: 1.5rem;
@@ -1077,18 +1089,22 @@ font-size: 1.2rem;
           line-height: 1.2;
           color: #000;
           margin-bottom: 1rem;
+        
         }
     .rightS {
       display: none;
     }
+  
     .ServCard {
-      width: 85%;
-
+      width: 80%;
+      height: 50%;
+font-size: 2vh;
     }
 .aboutSec{
 display: inline;
 }
 .aboutL{
+display: none;
 #aboutimg{
 
   width: 50vh;
@@ -1103,21 +1119,35 @@ display: inline;
 
     .footer-content {
       flex-direction: column;
+      justify-content: center;
       align-items: center;
       text-align: center;
       gap: 2vh;
     }
 
-    .footer-content>div {
-      width: 90%;
-    }
+       .footer-content > div {
+     
+       width: 90%;
+    }   
 
     #footerImg {
-      width: 10vh;
+      width: 15vh;
       height: 10vh;
-      
-    }
+    margin-bottom: 2vh;
+    } 
+.part-1{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+flex-direction: column;
+p{
 
+text-align-last:left;
+text-align: justify;
+
+}
+}
   
     .footer-credit {
       margin-top: 2vh;
@@ -1125,9 +1155,9 @@ display: inline;
     }
 
     footer {
-      padding: 3vh 0;
+      padding: 3vh 0vh;
       margin-top: 2rem;
-
+position: relative;
       li {
         display: block;
         margin: 1rem;
@@ -1138,16 +1168,18 @@ display: inline;
         text-decoration: none;
         color: #000000;
       }
-.part-5{
-  button{
-    width: 40vh;
-  }
-  input{
-    width: 40vh;
-  }
-}
+
     }
-       
+             .part-5 {
+              
+               button {
+                 width: 40vh;
+               }
+      
+               input {
+                 width:13vh;
+               }
+             }
   }
 
 
