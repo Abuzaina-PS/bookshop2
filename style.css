@@ -137,6 +137,18 @@ body.dark-mode {
       color: var(--dark-secondry-color);
     }
   }
+  #ArrivalsBtn{
+background-color: var(--dark-primary-color);
+border-color: var(--dark-secondry-color);
+color: var(--secondry-color);
+
+  }
+    #FeaturedBtn{
+background-color: var(--dark-primary-color);
+  border-color: var(--dark-secondry-color);
+  color: var(--secondry-color);
+
+    }
   footer {
     background-color: #111;
     color: #fff;
@@ -293,7 +305,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* Hide by default */
+  
   position: fixed;
   top: 0;
   left: 0;
@@ -306,7 +318,7 @@ header {
   text-align: center;
 }
 
-/* Close icon */
+
 .close-menu {
   position: absolute;
   top: 20px;
@@ -316,7 +328,7 @@ header {
   color: #333;
 }
 
-/* Menu items */
+
 .mobile-menu ul {
   list-style: none;
   padding: 0;
@@ -446,7 +458,6 @@ header {
   }
 }
 
-/* iPad Pro or larger screens */
 @media only screen and (max-width: 1024px) {
   .aboutSec {
     display: flex;
@@ -503,7 +514,6 @@ header {
 /* --------------------------------------------------------served-card----------------------------------------------------- */
 .contanir {
   width: 100%;
-  /* height: auto; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
@@ -1052,7 +1062,6 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* padding: 0 5vh; */
     flex-wrap: wrap;
   }
 
@@ -1090,7 +1099,6 @@ footer {
       border-radius: 10px;
       width: auto;
       height: 3.2vh;
-      /* margin-right: 2vh; */
       text-align: center;
     }
 
@@ -1184,7 +1192,6 @@ footer {
       border-radius: 10px;
       width: 20%;
       height: 2vh;
-      /* margin-right: 2vh; */
       text-align: center;
     }
 
@@ -1221,7 +1228,6 @@ footer {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
     margin-top: 1rem;
-    /* margin-right: 4rem; */
   }
   header li {
     font-size: 1.5rem;
